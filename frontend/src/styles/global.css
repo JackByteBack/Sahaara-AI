@@ -146,7 +146,9 @@ label.field > span { font-size: 12px; font-weight: 600; color: var(--text-muted)
   background: var(--canvas-soft); color: var(--ink);
   border-radius: var(--r-full); padding: 4px 12px;
   font-size: 12px; font-weight: 600;
+  white-space: nowrap;
 }
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .pill-accent { background: var(--accent); color: var(--on-primary); }
 .pill-danger { background: var(--danger); color: var(--on-primary); }
 .pill-warn { background: var(--warn-soft); color: var(--warn); border: 1px solid #fedf89; }

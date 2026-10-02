@@ -45,8 +45,8 @@ export default function NavPill() {
           ⚙
         </NavLink>
         {user && (
-          <span className="pill pill-outline hide-mobile" title={ROLE_LABELS[user.role]}>
-            {user.display_name} · {user.role}
+          <span className="pill pill-outline hide-mobile" title={`${user.display_name} · ${ROLE_LABELS[user.role]}`}>
+            <span className="truncate" style={{ maxWidth: 150 }}>{user.display_name} · {user.role}</span>
           </span>
         )}
         <button className="btn btn-primary" onClick={logout}>Log out</button>
