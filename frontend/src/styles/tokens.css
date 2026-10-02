@@ -1,0 +1,59 @@
+/* Sahaara AI design tokens — docs/DESIGN.md (Starbucks-inspired system).
+   Warm cream canvas (f2f0eb/edebe9) + four-tier green brand system
+   (Starbucks #006241 / Accent #00754A / House #1E3932 / Uplift #2b5148),
+   full-pill buttons, 12px card geometry, whisper-soft shadows.
+   Red stays reserved for safety states only. */
+
+:root {
+  /* Colors — greens */
+  --primary: #00754a;          /* Green Accent — CTAs */
+  --primary-strong: #006241;   /* Starbucks Green — headings, brand */
+  --primary-press: #004f37;    /* pressed / hover green */
+  --surface-dark: #1e3932;     /* House Green — footer, dark bands, operator bubbles */
+  --on-primary: #ffffff;
+
+  /* Colors — ink & neutrals */
+  --ink: rgba(0, 0, 0, 0.87);
+  --ink-soft: rgba(0, 0, 0, 0.68);
+  --text-muted: rgba(0, 0, 0, 0.58);
+  --text-faint: rgba(0, 0, 0, 0.38);
+  --surface: #ffffff;          /* cards & content bands */
+  --canvas: #f2f0eb;           /* warm cream page canvas */
+  --canvas-soft: #edebe9;      /* ceramic — soft zones */
+  --field: #ffffff;
+  --hairline-soft: rgba(0, 0, 0, 0.08);
+  --hairline: rgba(0, 0, 0, 0.16);
+  --accent: #cba258;           /* gold — ceremony only, used sparingly */
+
+  /* Semantic (safety states — build/frontend-ux-specs.md; kept scarce) */
+  --danger: #c82014;
+  --danger-soft: hsl(4 82% 43% / 0.06);
+  --warn: #9a6100;
+  --warn-soft: hsl(45 92% 45% / 0.14);
+  --ok: #00754a;
+
+  /* Shadows — "whisper-soft" elevation (DESIGN.md) */
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.06), 0 2px 10px rgba(0, 0, 0, 0.04);
+  --shadow-nav: 0 1px 2px rgba(0, 0, 0, 0.14), 0 4px 14px rgba(0, 0, 0, 0.08);
+
+  /* Typography — SoDoSans is proprietary; Inter substitutes (closest available),
+     Helvetica Neue is the brand's own loading fallback (DESIGN.md) */
+  --font: "SoDoSans", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* Radius scale — 12px cards, full-pill buttons */
+  --r-none: 0px;
+  --r-sm: 10px;
+  --r-md: 12px;
+  --r-xl: 24px;
+  --r-full: 9999px;
+
+  /* Spacing */
+  --s-xxs: 4px;
+  --s-xs: 8px;
+  --s-sm: 12px;
+  --s-md: 16px;
+  --s-lg: 24px;
+  --s-xl: 32px;
+  --s-xxl: 48px;
+  --s-section: 80px;
+}

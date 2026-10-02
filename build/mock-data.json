@@ -1,0 +1,30 @@
+{
+  "cases": [
+    {
+      "case_id": "c1",
+      "status": "reviewing",
+      "transcript": "I am feeling very lonely and I think about hurting myself sometimes.",
+      "ai_flags": {
+        "distress": { "confidence": 0.8, "text": "I think about hurting myself" }
+      },
+      "victim_safety_profile": {
+        "psych_distress": { "level": "HIGH" },
+        "immediate_danger": { "level": "NONE" }
+      },
+      "review_priority_score": 0.85
+    },
+    {
+      "case_id": "c2",
+      "status": "active",
+      "transcript": "My husband came home and started yelling at me again.",
+      "ai_flags": {
+        "distress": { "confidence": 0.6, "text": "husband yelling" }
+      },
+      "victim_safety_profile": {
+        "psych_distress": { "level": "MEDIUM" },
+        "immediate_danger": { "level": "POTENTIAL" }
+      },
+      "review_priority_score": 0.65
+    }
+  ]
+}

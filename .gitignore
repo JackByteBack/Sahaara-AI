@@ -1,0 +1,23 @@
+# Secrets & env
+.env
+backend/.env
+
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+backend/sahaara.db
+backend/test_sahaara.db
+backend/*.db
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# OS / editor
+.DS_Store
+
+# Logs
+*.log
+nohup.out

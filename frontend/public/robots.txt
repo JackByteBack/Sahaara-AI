@@ -1,0 +1,15 @@
+# https://sahaara.ai/robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /login
+Disallow: /session/
+Disallow: /cases
+Disallow: /analytics
+Disallow: /audit
+Disallow: /*?demo=
+
+# Helpline infrastructure — be gentle
+Crawl-delay: 1
+
+Sitemap: https://sahaara.ai/sitemap.xml
